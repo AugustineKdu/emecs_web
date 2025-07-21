@@ -1,0 +1,94 @@
+# EMECS 프론트엔드 Docker 배포 가이드 (Next.js 15.x)
+
+============================
+1. Dockerfile 내용 (루트에 반드시 존재해야 함)
+============================
+
+```
+# Next.js 15.x 프론트엔드 Dockerfile 예시
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+RUN npm run build
+
+EXPOSE 3000
+
+CMD ["npm", "run", "start"]
+```
+
+============================
+2. 리눅스/WSL/맥 터미널용
+============================
+
+1) 코드 클론
+----------------------------
+git clone <레포주소>
+cd <프로젝트폴더>
+
+2) 환경변수 파일 생성 (SEO 인증코드 없이도 동작)
+----------------------------
+echo "NEXT_PUBLIC_NAVER_SITE_VERIFICATION=\nNEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=\nNEXT_PUBLIC_KAKAO_SITE_VERIFICATION=" > .env.local
+
+3) Docker 이미지 빌드
+----------------------------
+docker build -t emecs-frontend .
+
+4) Docker 컨테이너 실행 (3000포트)
+----------------------------
+docker run -d -p 3000:3000 --name emecs-web emecs-frontend
+
+5) 접속
+----------------------------
+http://<서버IP>:3000
+
+
+============================
+3. 윈도우 Docker Desktop용
+============================
+
+1) 코드 클론 (Git Bash 또는 PowerShell)
+----------------------------
+git clone <레포주소>
+cd <프로젝트폴더>
+
+2) 환경변수 파일 생성 (메모장으로 직접 생성)
+----------------------------
+- 프로젝트 폴더에 `.env.local` 파일을 만듭니다.
+- 아래 내용 복사해서 붙여넣기:
+
+NEXT_PUBLIC_NAVER_SITE_VERIFICATION=
+NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=
+NEXT_PUBLIC_KAKAO_SITE_VERIFICATION=
+
+3) Docker 이미지 빌드 (PowerShell 또는 CMD)
+----------------------------
+docker build -t emecs-frontend .
+
+4) Docker 컨테이너 실행 (3000포트)
+----------------------------
+docker run -d -p 3000:3000 --name emecs-web emecs-frontend
+
+5) 접속
+----------------------------
+http://localhost:3000
+또는
+http://<윈도우PC IP>:3000
+
+
+============================
+[추가 안내]
+============================
+- 포트 변경: docker run -d -p 8080:3000 ...
+- 컨테이너 중지: docker stop emecs-web
+- 컨테이너 삭제: docker rm emecs-web
+- 이미지 삭제: docker rmi emecs-frontend
+- 환경변수 변경 시 컨테이너 재시작 필요
+
+---
+문의/문제 발생 시 언제든 질문해 주세요! 
