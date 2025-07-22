@@ -1,0 +1,8 @@
+{
+  "/products/page": "app/products/page.js",
+  "/products/wfsm/page": "app/products/wfsm/page.js",
+  "/portfolio/page": "app/portfolio/page.js",
+  "/en/portfolio/page": "app/en/portfolio/page.js",
+  "/en/products/page": "app/en/products/page.js",
+  "/page": "app/page.js"
+}
