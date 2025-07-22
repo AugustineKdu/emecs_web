@@ -1,4 +1,4 @@
-// File: /Users/augustinekim/Desktop/emecs_web/frontend/src/app/en/products/3-phase-induction/page.tsx
+// File: /Users/augustinekim/Desktop/emecs_web/src/app/en/products/3-phase-induction/page.tsx
 import * as entry from '../../../../../../src/app/en/products/3-phase-induction/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
