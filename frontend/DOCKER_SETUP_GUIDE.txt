@@ -1,76 +1,65 @@
-# EMECS 프론트엔드 Docker + nginx 배포/로컬 실행 가이드 (Next.js 15.x)
+# EMECS 프론트엔드 Cloudtype + Docker 배포 가이드 (Next.js 15.x)
 
 ---
 
 ## 1. 준비 사항
-- Docker, Docker Compose(선택) 설치
-- (운영 시) 도메인 소유 및 DNS 설정 완료
+- Cloudtype 계정 및 프로젝트 생성
+- GitHub 저장소(프론트엔드만 배포)
+- (선택) 도메인 소유 및 DNS 설정
 
 ---
 
-## 2. 빌드 및 실행
+## 2. Cloudtype 배포 절차
 
-### [공통] Docker 이미지 빌드
+### 1) Cloudtype 프로젝트 생성
+- Cloudtype(https://cloudtype.io) 접속 → 로그인
+- [새 프로젝트] → [GitHub 연동] → 프론트엔드 저장소 선택
+- [Dockerfile] 방식 선택
+
+### 2) 빌드/런 커맨드 및 포트 설정
+- 빌드 커맨드: (자동 감지, 별도 입력 불필요)
+- 실행 커맨드: (Dockerfile ENTRYPOINT/ CMD 사용)
+- 포트: 80 (Cloudtype에서 자동 감지, Dockerfile에서 EXPOSE 80 권장)
+
+### 3) 환경변수 설정
+- (필요시) Cloudtype [설정] → [환경변수]에서 입력
+- 예시: `NEXT_PUBLIC_API_URL`, `NODE_ENV=production` 등
+
+### 4) 배포
+- [배포] 버튼 클릭 → 자동 빌드 및 실행
+- 배포 완료 후 Cloudtype에서 제공하는 URL로 접속
+- (선택) 도메인 연결: Cloudtype [설정] → [도메인]에서 연결 및 인증서 발급
+
+---
+
+## 3. 로컬 빌드/테스트 (Docker)
+
+### 1) Docker 이미지 빌드
 ```bash
 docker build -t emecs-frontend .
 ```
 
----
-
-## 3. 운영(실제 도메인, HTTPS/Let's Encrypt) 배포
-
-### 1) 인증서 발급 (호스트에서)
+### 2) 컨테이너 실행 (로컬)
 ```bash
-# certbot 설치 및 인증서 발급 (예시)
-sudo apt install certbot
-sudo certbot certonly --standalone -d emecs.kr
+docker run -d -p 8080:80 --name emecs-frontend emecs-frontend
 ```
-- 인증서 경로: `/etc/letsencrypt/live/emecs.kr/fullchain.pem`, `privkey.pem`
-
-### 2) 컨테이너 실행 (인증서 마운트)
-```bash
-docker run -d \
-  -p 80:80 -p 443:443 \
-  -v /etc/letsencrypt:/etc/letsencrypt:ro \
-  --name emecs-frontend \
-  emecs-frontend
-```
-- 80포트: http, 443포트: https
-- nginx가 자동으로 인증서 인식
-
-### 3) 인증서 자동 갱신 (옵션)
-```bash
-sudo certbot renew
-```
-- 인증서 갱신 후 컨테이너 재시작 필요
+- http://localhost:8080 접속
+- (Cloudtype은 80포트로 서비스)
 
 ---
 
-## 4. 로컬(테스트/내부망) HTTPS 실행
-
-### 1) 컨테이너 실행
-```bash
-docker run -d -p 80:80 -p 443:443 --name emecs-frontend-local emecs-frontend
-```
-- 자체 서명 인증서가 자동 생성됨(`/etc/ssl/localcerts/`)
-- https://localhost 또는 https://<로컬IP>로 접속
-- 브라우저에서 "신뢰되지 않은 인증서" 경고 시 예외로 추가
+## 4. (참고) 직접 서버 배포(Docker + nginx)
+- 별도 서버에서 직접 운영 시 기존 가이드 참고
+- 인증서, nginx.conf, 포트포워딩 등 필요
 
 ---
 
-## 5. 기타
-- 정적 파일, SSR 모두 nginx가 프록시/서빙
-- 환경에 따라 nginx.conf에서 도메인명/인증서 경로 수정 가능
-- 필요시 docker-compose, 환경변수 분기 등 확장 가능
+## 5. 문제 해결
+- 빌드 실패: 로그 확인, 의존성 재설치, Dockerfile 수정
+- 포트 충돌: Cloudtype은 80포트만 사용, 로컬은 8080 등으로 매핑
+- 환경변수 미설정: Cloudtype [설정]에서 추가
 
 ---
 
-## 6. 문제 해결
-- 443포트 충돌: 기존 웹서버/프록시 중지 필요
-- 인증서 경로/권한 오류: 마운트 경로, 권한 확인
-- Next.js 빌드 실패: 로그 확인, 의존성 재설치
-
----
-
-## 7. 문의
+## 6. 문의
 - 추가 문의/지원 필요시 담당자에게 연락 
