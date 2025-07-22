@@ -1,0 +1,2 @@
+2e8e1cd 최신 Dockerfile 및 배포 메뉴얼(Next.js 15.x) 추가 및 전체 점검 완료
+e550464 Initial commit from Create Next App
