@@ -1,6 +1,8 @@
 // src/app/layout.tsx
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
+
+
 import './globals.css'
 import { LanguageProvider } from '@/context/LanguageContext'
 import { SEO_VERIFICATION } from '@/lib/seoVerification'
