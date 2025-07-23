@@ -29,13 +29,7 @@ export function CompanyAboutSection() {
                 'We design ultra-high efficiency IE4-IE5 motors. From 3-phase induction motors to high-speed motors and next-generation WFSM, we provide customized solutions for various industries.'
             )
         },
-        // {
-        //     question: t('신생 기업인데 믿을 수 있나요?', 'Can we trust a new company?'),
-        //     answer: t(
-        //         '회사는 새롭지만 기술은 검증되었습니다. 창업자는 산업통상자원부 기술 자문위원으로 활동하며, 다수의 특허를 보유한 전동기 설계 전문가입니다.',
-        //         'The company is new, but the technology is proven. The founder is a technical advisor to the Ministry of Trade and a motor design expert with multiple patents.'
-        //     )
-        // },
+
         {
             question: t('프로젝트 진행 과정은 어떻게 되나요?', 'What is the project process?'),
             answer: t(
@@ -95,10 +89,10 @@ export function CompanyAboutSection() {
                             <div className="flex flex-col justify-between lg:text-right">
                                 <div>
                                     <p className="text-2xl md:text-3xl font-semibold mb-3">
-                                        {t('대표이사', 'CEO')}
+                                        {t('Dr. Eng', 'Dr. Eng')} <span className="text-blue-200">Koo Young-Ho</span>
                                     </p>
                                     <p className="text-lg text-blue-200 mb-8">
-                                        {t('구**', 'Koo**')}
+                                        {t('구 대 현', 'Dae-Hyun Koo')}
                                     </p>
                                 </div>
 
