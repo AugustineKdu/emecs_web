@@ -7,9 +7,11 @@ import { Footer } from '@/components/Footer'
 import Link from 'next/link'
 import { ArrowLeft, Zap } from 'lucide-react'
 import Head from 'next/head'
+import { useLocalizedHref } from '@/lib/hooks/useLocaliezedHref'
 
 export default function HighSpeedPage() {
     const { t } = useLanguage()
+    const href = useLocalizedHref()
 
     const developmentTrack = {
         general: [
@@ -50,13 +52,13 @@ export default function HighSpeedPage() {
                 {/* Hero Section */}
                 <section className="pt-24 pb-16 bg-gradient-to-br from-blue-700 to-blue-900 text-white">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        {/* <Link
-                            href="/products"
+                        <Link
+                            href={href('/products')}
                             className="inline-flex items-center text-blue-100 hover:text-white mb-8 transition-colors"
                         >
                             <ArrowLeft className="h-4 w-4 mr-2" />
                             {t('제품 목록으로', 'Back to Products')}
-                        </Link> */}
+                        </Link>
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <div>

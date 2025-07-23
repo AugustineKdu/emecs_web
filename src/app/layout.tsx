@@ -48,8 +48,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://emecs.kr',
     languages: {
-      'ko': 'https://emecs.kr',
-      'en': 'https://emecs.kr/en',
+      'ko': 'https://www.emecs.kr',
+      'en': 'https://www.emecs.kr/en',
     },
   },
   other: {
