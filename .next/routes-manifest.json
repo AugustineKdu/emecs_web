@@ -1,0 +1,146 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "origin-when-cross-origin"
+        }
+      ],
+      "regex": "^(?:/(.*))(?:/)?$"
+    }
+  ],
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/en",
+      "regex": "^/en(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/en(?:/)?$"
+    },
+    {
+      "page": "/en/about",
+      "regex": "^/en/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/en/about(?:/)?$"
+    },
+    {
+      "page": "/en/portfolio",
+      "regex": "^/en/portfolio(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/en/portfolio(?:/)?$"
+    },
+    {
+      "page": "/en/products",
+      "regex": "^/en/products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/en/products(?:/)?$"
+    },
+    {
+      "page": "/en/products/3-phase-induction",
+      "regex": "^/en/products/3\\-phase\\-induction(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/en/products/3\\-phase\\-induction(?:/)?$"
+    },
+    {
+      "page": "/en/products/high-speed",
+      "regex": "^/en/products/high\\-speed(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/en/products/high\\-speed(?:/)?$"
+    },
+    {
+      "page": "/en/products/wfsm",
+      "regex": "^/en/products/wfsm(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/en/products/wfsm(?:/)?$"
+    },
+    {
+      "page": "/portfolio",
+      "regex": "^/portfolio(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/portfolio(?:/)?$"
+    },
+    {
+      "page": "/products",
+      "regex": "^/products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products(?:/)?$"
+    },
+    {
+      "page": "/products/3-phase-induction",
+      "regex": "^/products/3\\-phase\\-induction(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/3\\-phase\\-induction(?:/)?$"
+    },
+    {
+      "page": "/products/high-speed",
+      "regex": "^/products/high\\-speed(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/high\\-speed(?:/)?$"
+    },
+    {
+      "page": "/products/wfsm",
+      "regex": "^/products/wfsm(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/wfsm(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}

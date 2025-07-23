@@ -89,7 +89,7 @@ export function CompanyAboutSection() {
                             <div className="flex flex-col justify-between lg:text-right">
                                 <div>
                                     <p className="text-2xl md:text-3xl font-semibold mb-3">
-                                        {t('Dr. Eng', 'Dr. Eng')} <span className="text-blue-200">Koo Young-Ho</span>
+                                        {t('Dr. Eng', 'Dr. Eng')} <span className="text-blue-200"></span>
                                     </p>
                                     <p className="text-lg text-blue-200 mb-8">
                                         {t('구 대 현', 'Dae-Hyun Koo')}
