@@ -89,11 +89,11 @@ export function CompanyAboutSection() {
                             <div className="flex flex-col justify-between lg:text-right">
                                 <div>
                                     <p className="text-lg md:text-3xl font-semibold mb-3">
-                                        {t('Dr. Eng', 'Dr. Eng')} <span className="text-blue-200"></span>
-                                    </p>
-                                    <p className="text-lg text-blue-200 mb-8">
+                                    {/* <p className="text-lg text-blue-200 mb-8"> */}
+                                        {t('Eng. Dr.', 'Eng. Dr.')} <span className="text-blue-200"></span>
                                         {t('구 대 현', 'Dae-Hyun Koo')}
                                     </p>
+
                                 </div>
 
                                 {/* 연락처 */}

@@ -1,17 +1,17 @@
 {
   "/_not-found/page": "/_not-found",
   "/en/products/3-phase-induction/page": "/en/products/3-phase-induction",
+  "/en/products/page": "/en/products",
   "/en/products/wfsm/page": "/en/products/wfsm",
-  "/en/products/high-speed/page": "/en/products/high-speed",
   "/page": "/",
+  "/en/products/high-speed/page": "/en/products/high-speed",
   "/products/high-speed/page": "/products/high-speed",
-  "/products/3-phase-induction/page": "/products/3-phase-induction",
   "/products/page": "/products",
   "/products/wfsm/page": "/products/wfsm",
-  "/en/products/page": "/en/products",
-  "/en/portfolio/page": "/en/portfolio",
+  "/products/3-phase-induction/page": "/products/3-phase-induction",
   "/en/about/page": "/en/about",
   "/about/page": "/about",
+  "/en/portfolio/page": "/en/portfolio",
   "/en/page": "/en",
   "/portfolio/page": "/portfolio"
 }
