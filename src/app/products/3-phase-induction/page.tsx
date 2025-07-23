@@ -78,7 +78,6 @@ export default function ThreePhaseInductionPage() {
                 <link rel="canonical" href="https://emecs.kr/products/3-phase-induction" />
                 <link rel="alternate" hrefLang="ko" href="https://emecs.kr/products/3-phase-induction" />
                 <link rel="alternate" hrefLang="en" href="https://emecs.kr/en/products/3-phase-induction" />
-                <meta name="naver-site-verification" content="your-naver-verification-code" />
             </Head>
 
             <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
