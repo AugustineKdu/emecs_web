@@ -193,7 +193,7 @@ export function ROISection() {
                 {/* 투자회수 기간 시각화 (IE4 기준) */}
                 <div className="bg-blue-50 rounded-2xl p-8 mb-12 border-2 border-blue-200">
                     <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center">
-                        {t('IE4 전동기 투자회수 기간', 'IE4 Motor Payback Period')}
+                        {t('IE4 전동기 투자회수 기간 (일 12시간 사용시)', 'IE4 Motor Payback Period (12h/day usage)')}
                     </h3>
                     <div className="relative">
                         <div className="flex items-center mb-4">

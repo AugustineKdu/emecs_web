@@ -46,10 +46,10 @@ export default function ProductsPage() {
             <main className="min-h-screen">
                 <Navbar />
 
-                {/* 예시: 다국어 지원 h1 */}
+                {/* 예시: 다국어 지원 h1
                 <h1 className="text-2xl font-bold text-center my-8">
                     {t('제품 소개', 'Product Introduction')}
-                </h1>
+                </h1> */}
 
                 {/* 제품 메인 히어로 섹션 */}
                 <ProductHeroSection />

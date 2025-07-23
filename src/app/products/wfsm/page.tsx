@@ -56,13 +56,13 @@ export default function WFSMPage() {
                 {/* Hero Section */}
                 <section className="pt-24 pb-16 bg-gradient-to-br from-slate-700 to-slate-900 text-white">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <Link
+                        {/* <Link
                             href="/products"
                             className="inline-flex items-center text-slate-300 hover:text-white mb-8 transition-colors"
                         >
                             <ArrowLeft className="h-4 w-4 mr-2" />
                             {t('제품 목록으로', 'Back to Products')}
-                        </Link>
+                        </Link> */}
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <div>

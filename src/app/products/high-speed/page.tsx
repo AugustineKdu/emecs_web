@@ -16,7 +16,7 @@ export default function HighSpeedPage() {
             { power: '2.5kW', speed: '50,000 RPM' },
             { power: '10kW', speed: '30,000 RPM' },
             { power: '30kW', speed: '15,000 RPM' },
-            { power: '200kW', speed: '10,000 RPM' },
+            { power: '200kW', speed: '15,000 RPM' },
         ],
         ev: [
             { type: t('소형 승용차', 'Compact Car'), rated: '30kW', max: '60kW', speed: '15,000 RPM' },
@@ -50,13 +50,13 @@ export default function HighSpeedPage() {
                 {/* Hero Section */}
                 <section className="pt-24 pb-16 bg-gradient-to-br from-blue-700 to-blue-900 text-white">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <Link
+                        {/* <Link
                             href="/products"
                             className="inline-flex items-center text-blue-100 hover:text-white mb-8 transition-colors"
                         >
                             <ArrowLeft className="h-4 w-4 mr-2" />
                             {t('제품 목록으로', 'Back to Products')}
-                        </Link>
+                        </Link> */}
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <div>
