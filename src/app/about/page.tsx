@@ -12,12 +12,12 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-    title: '회사 소개 | 전동기 설계 전문기업 - EMECS | About Us - Motor Design Specialist',
-    description: '20년 이상의 전동기 설계 경험을 바탕으로 IE4-IE5 고효율 전동기를 개발하는 조립 전문 기술회사입니다. 탈탄소 시대를 선도하는 고효율 신기술 솔루션을 제공합니다. | With over 20 years of motor design experience, we are a specialized technology company developing IE4-IE5 high-efficiency motors.',
-    keywords: '전동기 설계, 조립 전문, 고효율 전동기, 전동기 회사, 모터 설계, IE4, IE5, 탄소중립, 신기술 솔루션, motor design, high efficiency motor, motor company, carbon neutral',
+    title: 'EMECS 소개 | KERI 출신 고효율 전동기 재설계 전문가 그룹',
+    description: '한국전기연구원 20년 경력 연구책임자가 설립. 국가 R&D 50개 이상 수행. B2B 맞춤형 모터 재설계로 에너지 효율 극대화. 검증된 기술력으로 신뢰받는 파트너.',
+    keywords: 'EMECS,전동기재설계,KERI,고효율전동기,전동기설계전문가,20년경력,국가R&D,맞춤형모터,에너지효율,신뢰성',
     openGraph: {
-        title: '회사 소개 | 전동기 설계 전문기업 - EMECS',
-        description: '20년 이상의 전동기 설계 경험을 바탕으로 고효율 전동기를 개발하는 전문 기업입니다.',
+        title: 'EMECS 소개 | KERI 출신 고효율 전동기 재설계 전문가 그룹',
+        description: '한국전기연구원 20년 경력 연구책임자가 설립. 국가 R&D 50개 이상 수행. B2B 맞춤형 모터 재설계로 에너지 효율 극대화. 검증된 기술력으로 신뢰받는 파트너.',
         type: 'website',
         locale: 'ko_KR',
         url: 'https://emecs.kr/about',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         //         url: '/images/company-hero.jpg',
         //         width: 1200,
         //         height: 630,
-        //         alt: 'EMECS 회사 소개 | About EMECS',
+        //         alt: 'EMECS 회사소개',
         //     },
         // ],
     },
@@ -41,7 +41,6 @@ export const metadata: Metadata = {
     other: {
         'naver-site-verification': SEO_VERIFICATION.naver,
         'google-site-verification': SEO_VERIFICATION.google,
-        'kakao-site-verification': SEO_VERIFICATION.kakao,
     },
 }
 

@@ -4,13 +4,12 @@
 import { useLanguage } from '@/context/LanguageContext'
 import { Calendar, Building2, Award, ArrowRight, Zap, Settings, Cpu, CheckCircle, TrendingUp, Car } from 'lucide-react'
 import { useState, useEffect } from 'react'
-import { getPortfolio, type PortfolioProject } from '@/lib/api'
 
 export function PortfolioSection() {
     const { t } = useLanguage()
     const [selectedFilter, setSelectedFilter] = useState('all')
     const [showAllProjects, setShowAllProjects] = useState(false)
-    const [_projects, setProjects] = useState<PortfolioProject[]>([])
+    const [_projects, setProjects] = useState<any[]>([])
     const [_loading, setLoading] = useState(true)
     const [_error, setError] = useState<string | null>(null)
 
@@ -21,13 +20,9 @@ export function PortfolioSection() {
             setError(null)
 
             try {
-                const result = await getPortfolio()
-
-                if (result.success && result.data) {
-                    setProjects(result.data)
-                } else {
-                    setError(result.error || '포트폴리오 데이터를 불러오는데 실패했습니다.')
-                }
+                // getPortfolio 삭제: 더미 데이터로 대체
+                setProjects([])
+                // setError(null)
             } catch (err) {
                 setError('네트워크 오류가 발생했습니다.')
                 console.error('Portfolio fetch error:', err)
@@ -297,13 +292,13 @@ export function PortfolioSection() {
                         </div>
 
                         {/* 책임자 수행 실적 */}
-                        <div className="inline-flex items-center gap-6 px-8 py-4 bg-blue-50 rounded-full">
+                        <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 px-4 sm:px-8 py-4 bg-blue-50 rounded-2xl w-full max-w-md mx-auto">
                             <div className="flex items-center gap-2">
                                 <Award className="h-5 w-5 text-blue-600" />
                                 <span className="text-gray-700 font-medium">{t('연구책임자', 'Principal Investigator')}</span>
                                 <span className="text-xl font-bold text-blue-700">{t('13건', '13 cases')}</span>
                             </div>
-                            <div className="w-px h-6 bg-blue-200"></div>
+                            <div className="hidden sm:block w-px h-6 bg-blue-200"></div>
                             <div className="flex items-center gap-2">
                                 <TrendingUp className="h-5 w-5 text-purple-600" />
                                 <span className="text-gray-700 font-medium">{t('총괄책임자', 'General Manager')}</span>

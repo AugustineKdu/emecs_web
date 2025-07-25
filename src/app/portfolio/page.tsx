@@ -12,12 +12,12 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-    title: '포트폴리오 | 전동기 설계 프로젝트 실적 - EMECS | Portfolio - Motor Design Projects',
-    description: '20년간 수행한 50개 이상의 국가 R&D 프로젝트와 300개 이상의 산업용 전동기 설계 프로젝트 실적을 확인하세요. IE4-IE5 고효율 전동기 개발 경험을 보유하고 있습니다. | Check our track record of over 50 national R&D projects and 300+ industrial motor design projects over 20 years.',
-    keywords: '전동기 설계 실적, R&D 프로젝트, 고효율 전동기 개발, IE4 IE5, 국가 연구개발, 전동기 포트폴리오, motor design portfolio, R&D projects, high efficiency motor development',
+    title: '포트폴리오 | 고효율 전동기 설계 실적 - EMECS',
+    description: '20년간 50개 이상 국가 R&D, 300건 이상의 산업용 전동기 설계 실적 보유. IE4-IE5 고효율 전동기 개발 경험과 다양한 맞춤형 프로젝트 포트폴리오를 확인하세요.',
+    keywords: '전동기설계실적,포트폴리오,고효율전동기,IE4,IE5,국가R&D,산업용전동기,EMECS,모터설계,프로젝트실적',
     openGraph: {
-        title: '포트폴리오 | 전동기 설계 프로젝트 실적 - EMECS',
-        description: '20년간 수행한 50개 이상의 국가 R&D 프로젝트와 300개 이상의 산업용 전동기 설계 프로젝트 실적',
+        title: '포트폴리오 | 고효율 전동기 설계 실적 - EMECS',
+        description: '20년간 50개 이상 국가 R&D, 300건 이상의 산업용 전동기 설계 실적 보유. IE4-IE5 고효율 전동기 개발 경험과 다양한 맞춤형 프로젝트 포트폴리오를 확인하세요.',
         type: 'website',
         locale: 'ko_KR',
         url: 'https://emecs.kr/portfolio',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         //         url: '/images/portfolio-hero.jpg',
         //         width: 1200,
         //         height: 630,
-        //         alt: 'EMECS 포트폴리오 | EMECS Portfolio',
+        //         alt: 'EMECS 포트폴리오',
         //     },
         // ],
     },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     other: {
         'naver-site-verification': SEO_VERIFICATION.naver,
         'google-site-verification': SEO_VERIFICATION.google,
-        'kakao-site-verification': SEO_VERIFICATION.kakao,
+        // 'kakao-site-verification': SEO_VERIFICATION.kakao, // 제거
     },
 }
 
