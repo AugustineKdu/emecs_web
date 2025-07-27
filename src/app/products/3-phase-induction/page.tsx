@@ -12,14 +12,14 @@ export const metadata: Metadata = {
         description: '기존 3상 유도전동기를 최신 고효율 설계로 재설계하여 탄소배출 획기적 감소. 0.75-500kW 모든 용량 대응. 동일 프레임 크기로 효율만 극대화.',
         type: 'website',
         locale: 'ko_KR',
-        url: 'https://emecs.kr/products/3-phase-induction',
+        url: 'https://www.emecs.kr/products/3-phase-induction',
         siteName: 'EMECS',
     },
     alternates: {
-        canonical: 'https://emecs.kr/products/3-phase-induction',
+        canonical: 'https://www.emecs.kr/products/3-phase-induction',
         languages: {
-            'ko': 'https://emecs.kr/products/3-phase-induction',
-            'en': 'https://emecs.kr/en/products/3-phase-induction',
+            'ko': 'https://www.emecs.kr/products/3-phase-induction',
+            'en': 'https://www.emecs.kr/en/products/3-phase-induction',
         },
     },
     other: {

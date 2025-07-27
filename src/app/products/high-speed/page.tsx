@@ -12,14 +12,14 @@ export const metadata: Metadata = {
         description: '최대 50,000 RPM의 초고속 회전을 안정적으로 구현하는 특수 설계 전동기. 다양한 산업 분야에 최적화된 솔루션 제공.',
         type: 'website',
         locale: 'ko_KR',
-        url: 'https://emecs.kr/products/high-speed',
+        url: 'https://www.emecs.kr/products/high-speed',
         siteName: 'EMECS',
     },
     alternates: {
-        canonical: 'https://emecs.kr/products/high-speed',
+        canonical: 'https://www.emecs.kr/products/high-speed',
         languages: {
-            'ko': 'https://emecs.kr/products/high-speed',
-            'en': 'https://emecs.kr/en/products/high-speed',
+            'ko': 'https://www.emecs.kr/products/high-speed',
+            'en': 'https://www.emecs.kr/en/products/high-speed',
         },
     },
     other: {

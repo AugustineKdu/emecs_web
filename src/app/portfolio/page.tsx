@@ -20,28 +20,21 @@ export const metadata: Metadata = {
         description: '20년간 50개 이상 국가 R&D, 300건 이상의 산업용 전동기 설계 실적 보유. IE4-IE5 고효율 전동기 개발 경험과 다양한 맞춤형 프로젝트 포트폴리오를 확인하세요.',
         type: 'website',
         locale: 'ko_KR',
-        url: 'https://emecs.kr/portfolio',
+        url: 'https://www.emecs.kr/portfolio',
         siteName: 'EMECS',
-        // images: [
-        //     {
-        //         url: '/images/portfolio-hero.jpg',
-        //         width: 1200,
-        //         height: 630,
-        //         alt: 'EMECS 포트폴리오',
-        //     },
-        // ],
+
     },
     alternates: {
-        canonical: 'https://emecs.kr/portfolio',
+        canonical: 'https://www.emecs.kr/portfolio',
         languages: {
-            'ko': 'https://emecs.kr/portfolio',
-            'en': 'https://emecs.kr/en/portfolio',
+            'ko': 'https://www.emecs.kr/portfolio',
+            'en': 'https://www.emecs.kr/en/portfolio',
         },
     },
     other: {
         'naver-site-verification': SEO_VERIFICATION.naver,
         'google-site-verification': SEO_VERIFICATION.google,
-        
+
     },
 }
 

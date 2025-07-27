@@ -32,14 +32,21 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ko_KR',
-    url: 'https://emecs.kr',
+    url: 'https://www.emecs.kr',
     title: 'EMECS - High Efficiency Motors | 고효율 전동기 전문기업',
     description: 'Premium motor solutions with IE4 and IE5 efficiency. 20년 전동기 설계 경험을 바탕으로 고효율 전동기를 개발하는 전문기업입니다.',
     siteName: 'EMECS',
-
+    images: [
+      {
+        url: '/EMECSfavicon.png',
+        width: 32,
+        height: 32,
+        alt: 'EMECS Logo',
+      },
+    ],
   },
   alternates: {
-    canonical: 'https://emecs.kr',
+    canonical: 'https://www.emecs.kr',
     languages: {
       'ko': 'https://www.emecs.kr',
       'en': 'https://www.emecs.kr/en',

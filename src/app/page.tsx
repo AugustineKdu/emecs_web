@@ -12,14 +12,14 @@ export const metadata: Metadata = {
     description: '기존 전동기를 고효율로 재설계하여 탄소배출 감소. KERI 출신 20년 경력 전문가의 맞춤형 모터 설계. IE4-IE5 등급 업그레이드로 ESG 경영 실현.',
     type: 'website',
     locale: 'ko_KR',
-    url: 'https://emecs.kr',
+    url: 'https://www.emecs.kr',
     siteName: 'EMECS',
   },
   alternates: {
-    canonical: 'https://emecs.kr',
+    canonical: 'https://www.emecs.kr',
     languages: {
-      'ko': 'https://emecs.kr',
-      'en': 'https://emecs.kr/en',
+      'ko': 'https://www.emecs.kr',
+      'en': 'https://www.emecs.kr/en',
     },
   },
   other: {

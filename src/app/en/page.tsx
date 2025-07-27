@@ -18,22 +18,15 @@ export const metadata: Metadata = {
         description: 'Reduce energy costs and achieve carbon neutrality with IE4-IE5 high-efficiency motors.',
         type: 'website',
         locale: 'en_US',
-        url: 'https://emecs.kr/en',
+        url: 'https://www.emecs.kr/en',
         siteName: 'EMECS',
-        // images: [
-        //     {
-        //         url: '/images/emecs-og-image-en.jpg',
-        //         width: 1200,
-        //         height: 630,
-        //         alt: 'EMECS - High Efficiency Motors',
-        //     },
-        // ],
+
     },
     alternates: {
-        canonical: 'https://emecs.kr/en',
+        canonical: 'https://www.emecs.kr/en',
         languages: {
-            'ko': 'https://emecs.kr',
-            'en': 'https://emecs.kr/en',
+            'ko': 'https://www.emecs.kr',
+            'en': 'https://www.emecs.kr/en',
         },
     },
     other: {

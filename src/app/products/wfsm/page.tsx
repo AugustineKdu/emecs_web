@@ -12,14 +12,14 @@ export const metadata: Metadata = {
         description: '희토류 자석 없이도 고효율·고성능을 구현하는 친환경 권선형 동기 전동기(WFSM). 자유로운 역률 제어와 폭넓은 속도 제어로 차세대 탈희토류 솔루션을 제공합니다.',
         type: 'website',
         locale: 'ko_KR',
-        url: 'https://emecs.kr/products/wfsm',
+        url: 'https://www.emecs.kr/products/wfsm',
         siteName: 'EMECS',
     },
     alternates: {
-        canonical: 'https://emecs.kr/products/wfsm',
+        canonical: 'https://www.emecs.kr/products/wfsm',
         languages: {
-            'ko': 'https://emecs.kr/products/wfsm',
-            'en': 'https://emecs.kr/en/products/wfsm',
+            'ko': 'https://www.emecs.kr/products/wfsm',
+            'en': 'https://www.emecs.kr/en/products/wfsm',
         },
     },
     other: {

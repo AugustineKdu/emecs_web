@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         description: 'With over 20 years of motor design experience, we are a specialized technology company developing IE4-IE5 high-efficiency motors.',
         type: 'website',
         locale: 'en_US',
-        url: 'https://emecs.kr/en/about',
+        url: 'https://www.emecs.kr/en/about',
         siteName: 'EMECS',
         // images: [
         //     {
@@ -30,10 +30,10 @@ export const metadata: Metadata = {
         // ],
     },
     alternates: {
-        canonical: 'https://emecs.kr/en/about',
+        canonical: 'https://www.emecs.kr/en/about',
         languages: {
-            'ko': 'https://emecs.kr/about',
-            'en': 'https://emecs.kr/en/about',
+            'ko': 'https://www.emecs.kr/about',
+            'en': 'https://www.emecs.kr/en/about',
         },
     },
     other: {

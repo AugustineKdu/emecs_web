@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         description: 'Track record of over 50 national R&D projects and 300+ industrial motor design projects over 20 years.',
         type: 'website',
         locale: 'en_US',
-        url: 'https://emecs.kr/en/portfolio',
+        url: 'https://www.emecs.kr/en/portfolio',
         siteName: 'EMECS',
         // images: [
         //     {
@@ -30,10 +30,10 @@ export const metadata: Metadata = {
         // ],
     },
     alternates: {
-        canonical: 'https://emecs.kr/en/portfolio',
+        canonical: 'https://www.emecs.kr/en/portfolio',
         languages: {
-            'ko': 'https://emecs.kr/portfolio',
-            'en': 'https://emecs.kr/en/portfolio',
+            'ko': 'https://www.emecs.kr/portfolio',
+            'en': 'https://www.emecs.kr/en/portfolio',
         },
     },
     other: {

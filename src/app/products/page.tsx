@@ -15,22 +15,15 @@ export const metadata: Metadata = {
         description: 'B2B 맞춤형 고효율 전동기 설계로 탄소배출 대폭 감소. 기존 IE3를 IE4-IE5로 업그레이드하여 에너지 효율 극대화. 3상 유도전동기, 고속전동기 재설계 전문.',
         type: 'website',
         locale: 'ko_KR',
-        url: 'https://emecs.kr/products',
+        url: 'https://www.emecs.kr/products',
         siteName: 'EMECS',
-        // images: [
-        //   {
-        //     url: '/images/products-hero.jpg',
-        //     width: 1200,
-        //     height: 630,
-        //     alt: 'EMECS 고효율 전동기 제품',
-        //   },
-        // ],
+
     },
     alternates: {
-        canonical: 'https://emecs.kr/products',
+        canonical: 'https://www.emecs.kr/products',
         languages: {
-            'ko': 'https://emecs.kr/products',
-            'en': 'https://emecs.kr/en/products',
+            'ko': 'https://www.emecs.kr/products',
+            'en': 'https://www.emecs.kr/en/products',
         },
     },
     other: {
