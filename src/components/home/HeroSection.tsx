@@ -161,7 +161,7 @@ export function HeroSection() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
 
                         {/* AI 생성 이미지 표시 */}
-                        <div className="absolute top-4 right-4 z-10">
+                        <div className="absolute bottom-4 right-4 z-10">
                             <div className="bg-black/50 backdrop-blur-sm text-white px-2 py-1 rounded text-xs font-medium border border-white/20">
                                 {t('AI 생성 이미지', 'AI Generated')}
                             </div>
