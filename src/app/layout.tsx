@@ -16,7 +16,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  
+
   title: 'EMECS - High Efficiency Motors | 고효율 전동기 전문기업',
   description: 'Premium motor solutions with IE4 and IE5 efficiency. 20년 전동기 설계 경험을 바탕으로 고효율 전동기를 개발하는 전문기업입니다.',
   keywords: 'motor, efficiency, IE4, IE5, industrial, electric motor, 전동기, 고효율, 모터, 산업용, 전기모터',
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   robots: 'index, follow',
   manifest: '/manifest.json',
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: '/EMECSfavicon.png',
+    apple: '/EMECSfavicon.png',
   },
   openGraph: {
     type: 'website',
@@ -36,14 +36,7 @@ export const metadata: Metadata = {
     title: 'EMECS - High Efficiency Motors | 고효율 전동기 전문기업',
     description: 'Premium motor solutions with IE4 and IE5 efficiency. 20년 전동기 설계 경험을 바탕으로 고효율 전동기를 개발하는 전문기업입니다.',
     siteName: 'EMECS',
-    // images: [
-    //   {
-    //     url: '/images/emecs-og-image.jpg',
-    //     width: 1200,
-    //     height: 630,
-    //     alt: 'EMECS - High Efficiency Motors',
-    //   },
-    // ],
+
   },
   alternates: {
     canonical: 'https://emecs.kr',
@@ -55,7 +48,7 @@ export const metadata: Metadata = {
   other: {
     'naver-site-verification': SEO_VERIFICATION.naver,
     'google-site-verification': SEO_VERIFICATION.google,
-    'kakao-site-verification': SEO_VERIFICATION.kakao,
+
   },
 }
 
