@@ -138,7 +138,9 @@ export function Footer() {
                         <p className="text-gray-400 text-center sm:text-left mb-4 sm:mb-0">
                             © 2025 EMECS. {t('모든 권리 보유.', 'All rights reserved.')}
                         </p>
-
+  <div className="flex space-x-6, text-gray-400">
+                            <p>Design & Devlopment by NQ</p>
+                        </div>  
                         {/* 추가: 개인정보처리방침, 이용약관 등 */}
                         {/* <div className="flex space-x-6">
                             <Link

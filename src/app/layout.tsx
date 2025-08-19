@@ -66,6 +66,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
+      <head>
+    <meta name="google-site-verification" content="CE1dIZwHFMP8KAhlwatV19WOJYrjolIjddAsGvIEC0U" />
+    /</head>
       <body className={inter.className}>
         <LanguageProvider>
           <div className="min-h-screen flex flex-col">
